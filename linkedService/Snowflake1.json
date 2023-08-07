@@ -6,8 +6,8 @@
 		"type": "Snowflake",
 		"typeProperties": {
 			"authenticationType": "Basic",
-			"connectionString": "jdbc:snowflake://lta38753.snowflakecomputing.com/?user=PVYAS&db=PVYAS&warehouse=DE_WH&role=DATA_ENGINEERING",
-			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQDk4NDQxQzgxLTA0QTUtNDEyNi04NzM1LTg0OUNBNjEzMzgzRF84MjIzNjRjOS1iOGIwLTQwZDYtOWFkMC1jYjM1NjRjMGE3MzEiDQp9"
+			"connectionString": "jdbc:snowflake://lta38753.AWS_US_WEST_2.snowflakecomputing.com/?user=PVYAS&db=PVYAS&warehouse=DE_WH&role=DATA_ENGINEERING",
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQDk4NDQxQzgxLTA0QTUtNDEyNi04NzM1LTg0OUNBNjEzMzgzRF83MTY5N2Q1NC02MGI0LTQzYmYtOTEwNS0xYWNiYTk2ZDdmZDEiDQp9"
 		}
 	}
 }
