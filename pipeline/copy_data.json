@@ -41,7 +41,13 @@
 							"type": "SnowflakeImportCopyCommand"
 						}
 					},
-					"enableStaging": false,
+					"enableStaging": true,
+					"stagingSettings": {
+						"linkedServiceName": {
+							"referenceName": "linked_service_blob",
+							"type": "LinkedServiceReference"
+						}
+					},
 					"translator": {
 						"type": "TabularTranslator",
 						"mappings": [
@@ -106,7 +112,7 @@
 				],
 				"outputs": [
 					{
-						"referenceName": "dm_customer",
+						"referenceName": "SnowflakeTable1",
 						"type": "DatasetReference"
 					}
 				]
