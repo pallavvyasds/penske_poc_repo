@@ -25,9 +25,14 @@
 				],
 				"typeProperties": {
 					"source": {
-						"type": "SnowflakeSource",
-						"exportSettings": {
-							"type": "SnowflakeExportCopyCommand"
+						"type": "DelimitedTextSource",
+						"storeSettings": {
+							"type": "AzureBlobStorageReadSettings",
+							"recursive": true,
+							"enablePartitionDiscovery": false
+						},
+						"formatSettings": {
+							"type": "DelimitedTextReadSettings"
 						}
 					},
 					"sink": {
@@ -39,7 +44,7 @@
 					"enableStaging": true,
 					"stagingSettings": {
 						"linkedServiceName": {
-							"referenceName": "linkedService1",
+							"referenceName": "linked_service_blob",
 							"type": "LinkedServiceReference"
 						}
 					},
@@ -48,7 +53,7 @@
 						"mappings": [
 							{
 								"source": {
-									"name": "ID",
+									"name": "id",
 									"type": "String"
 								},
 								"sink": {
@@ -58,7 +63,7 @@
 							},
 							{
 								"source": {
-									"name": "NAME",
+									"name": "name",
 									"type": "String"
 								},
 								"sink": {
@@ -68,7 +73,7 @@
 							},
 							{
 								"source": {
-									"name": "CITY",
+									"name": "city",
 									"type": "String"
 								},
 								"sink": {
@@ -78,7 +83,7 @@
 							},
 							{
 								"source": {
-									"name": "EMAIL",
+									"name": "email",
 									"type": "String"
 								},
 								"sink": {
@@ -88,7 +93,7 @@
 							},
 							{
 								"source": {
-									"name": "CREATEDDATE",
+									"name": "created_date",
 									"type": "DateTime"
 								},
 								"sink": {
@@ -101,7 +106,7 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "dw_customer",
+						"referenceName": "DelimitedText2",
 						"type": "DatasetReference"
 					}
 				],
